@@ -19,9 +19,7 @@ The raw data came from the *Human Activity Recognition Using Smartphones Dataset
 ###Notes on the original (raw) data 
 The researchers who originally compiled the data explain the process in the following way: "The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data." 
 
-##Creating the tidy datafile
-
-###Guide to create the tidy data file
+##File Recipe
 
 Used the process as outlined in the project instructions:
 
@@ -55,7 +53,7 @@ Using the ddply() function, summarized data by taking the mean of each variable 
 
 ##Description of the variables 
 
-Note: Except for subject_id and activity, all variables are normalized and bounded within [-1,1].
+*Note: Except for subject_id and activity, all variables are normalized and bounded within [-1,1].*
 
 180 rows by 81 columns with the following variables:
  - subject_id	
