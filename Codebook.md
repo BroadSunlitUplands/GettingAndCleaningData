@@ -53,9 +53,6 @@ b) Removed parentheses.
 Using the ddply() function, summarized data by taking the mean of each variable for each activity and each subject.
 
 
-###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
-
 ##Description of the variables in the tidy_data.txt file
 180 rows by 81 columns with the following variables:
  - subject_id	
