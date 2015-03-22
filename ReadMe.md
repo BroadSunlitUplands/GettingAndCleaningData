@@ -55,7 +55,7 @@ The code accomplishes the assignment's five requirements:
 
 **Required Software**
 
-- The run_analysis.R script requires the R, which can be found at [http://www.r-project.org/](http://www.r-project.org/ "http://www.r-project.org/").
+- The run_analysis.R script requires the R system, which can be found at [http://www.r-project.org/](http://www.r-project.org/ "http://www.r-project.org/").
 
 **Required R Packages**
 
