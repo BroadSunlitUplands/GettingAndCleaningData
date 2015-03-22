@@ -54,6 +54,9 @@ Using the ddply() function, summarized data by taking the mean of each variable 
 
 
 ##Description of the variables 
+
+Note: Except for subject_id and activity, all variables are normalized and bounded within [-1,1].
+
 180 rows by 81 columns with the following variables:
  - subject_id	
  - activity	
@@ -142,6 +145,7 @@ Using the ddply() function, summarized data by taking the mean of each variable 
 Denotes the subject performing the activity.
 
  - Class: integer
+ - Range: 1 - 30
 
 ### activity
 Denotes the task the subject was performing.
@@ -422,19 +426,19 @@ Mean of the standard deviation of the body acceleration signal from the smartpho
 	
 
 ### fBodyAcc_meanFreq_X
-Mean of the mean frequency for body acceleration signal from the smartphone accelerometer X axis using a fast Fourier transform. 
+Mean of the weighted average of the frequency components for body acceleration signal from the smartphone accelerometer X axis using a fast Fourier transform. 
 
  - Class: numeric
 
 
 ### fBodyAcc_meanFreq_Y
-Mean of the mean frequency for body acceleration signal from the smartphone accelerometer Y axis using a fast Fourier transform. 
+Mean of the weighted average of the frequency components for body acceleration signal from the smartphone accelerometer Y axis using a fast Fourier transform. 
 
  - Class: numeric
 
 
 ### fBodyAcc_meanFreq_Z
-Mean of the mean frequency for body acceleration signal from the smartphone accelerometer Z axis using a fast Fourier transform. 
+Mean of the weighted average of the frequency components for body acceleration signal from the smartphone accelerometer Z axis using a fast Fourier transform. 
 
  - Class: numeric
 
@@ -476,19 +480,19 @@ Mean of the standard deviation measuring the body's jerk around the Z axis using
 
 
 ### fBodyAccJerk_meanFreq_X
-Mean of the mean frequency for body jerk signal from the smartphone accelerometer X axis using a fast Fourier transform. 
+Mean of the weighted average of the frequency components for body jerk signal from the smartphone accelerometer X axis using a fast Fourier transform. 
 
  - Class: numeric
 
 
 ### fBodyAccJerk_meanFreq_Y
-Mean of the mean frequency for body jerk signal from the smartphone accelerometer Y axis using a fast Fourier transform. 
+Mean of the weighted average of the frequency components for body jerk signal from the smartphone accelerometer Y axis using a fast Fourier transform. 
 
  - Class: numeric
 
 
 ### fBodyAccJerk_meanFreq_Z
-Mean of the mean frequency for body jerk signal from the smartphone accelerometer Z axis using a fast Fourier transform. 
+Mean of the weighted average of the frequency components for body jerk signal from the smartphone accelerometer Z axis using a fast Fourier transform. 
 
  - Class: numeric
 
@@ -529,19 +533,19 @@ Mean of the standard deviation measuring the body's angular velocity around the 
 
 
 ### fBodyGyro_meanFreq_X
-Mean of the mean frequency measuring the body's angular velocity around the X axis using a fast Fourier transform, measured by the gyroscope for each window sample. 
+Mean of the weighted average of the frequency components measuring the body's angular velocity around the X axis using a fast Fourier transform, measured by the gyroscope for each window sample. 
 
  - Class: numeric
 
 
 ### fBodyGyro_meanFreq_Y
-Mean of the mean frequency measuring the body's angular velocity around the Y axis using a fast Fourier transform, measured by the gyroscope for each window sample.
+Mean of the weighted average of the frequency components measuring the body's angular velocity around the Y axis using a fast Fourier transform, measured by the gyroscope for each window sample.
 
  - Class: numeric
 
 
 ### fBodyGyro_meanFreq_Z
-Mean of the mean frequency measuring the body's angular velocity around the Z axis using a fast Fourier transform, measured by the gyroscope for each window sample.
+Mean of the weighted average of the frequency components measuring the body's angular velocity around the Z axis using a fast Fourier transform, measured by the gyroscope for each window sample.
 
  - Class: numeric
 
@@ -558,7 +562,7 @@ Mean of the standard deviation measuring the body's magnitude of acceleration us
  - Class: numeric
 
 ###  fBodyAccMag_meanFreq	
-Mean of the mean frequency measuring the body's magnitude of acceleration using a fast Fourier transform.
+Mean of the weighted average of the frequency components measuring the body's magnitude of acceleration using a fast Fourier transform.
 
  - Class: numeric
 
@@ -574,7 +578,7 @@ Mean of the standard deviation measuring the body's magnitude of jerk using a fa
  - Class: numeric
 
 ###  fBodyAccJerkMag_meanFreq		
-Mean of the mean frequency measuring the body's magnitude of jerk using a fast Fourier transform.
+Mean of the weighted average of the frequency components measuring the body's magnitude of jerk using a fast Fourier transform.
 
  - Class: numeric	
 
@@ -591,7 +595,7 @@ Mean of the standard deviation measuring the body's magnitude of angular velocit
  - Class: numeric
 
 ###  fBodyGyroMag_meanFreq		
-Mean of the mean frequency measuring the body's magnitude of angular velocity using a fast Fourier transform, measured by the gyroscope for each window sample.
+Mean of the weighted average of the frequency components measuring the body's magnitude of angular velocity using a fast Fourier transform, measured by the gyroscope for each window sample.
 
  - Class: numeric
 
@@ -608,7 +612,7 @@ Mean of the standard deviation measuring the body's magnitude of jerk using a fa
  - Class: numeric
 
 ###  fBodyGyroJerkMag_meanFreq		
-Mean of the mean frequency measuring the body's magnitude of jerk using a fast Fourier transform, measured by the gyroscope for each window sample.
+Mean of the weighted average of the frequency components measuring the body's magnitude of jerk using a fast Fourier transform, measured by the gyroscope for each window sample.
 
  - Class: numeric
 
